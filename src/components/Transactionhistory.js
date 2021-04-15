@@ -10,7 +10,7 @@ function TransactionHistory() {
         <div className="container" >
          <div className="p-4">
     
-    <table className="table-sm table border shadow">
+    <table className="table border shadow">
       <thead className="thead-dark">
         <tr>
         <th scope="col"> Transaction Id</th>

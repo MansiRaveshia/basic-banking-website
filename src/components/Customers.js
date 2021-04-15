@@ -13,7 +13,7 @@ const Customers = () =>{
         
          <div className="container " >
          <div className="p-3">
-<table class="table-sm table border shadow" >
+<table class=" table border shadow" >
   <thead class="thead-dark">
     <tr>
       <th scope="col">#</th>
@@ -33,7 +33,7 @@ const Customers = () =>{
       <td>{customer.name}</td>
       <td>{customer.email}</td>
       <td>{customer.balance}</td>
-      <td className=' p-2'><Link to={`/customers/transfer/${customer.id}`}><button  className="btn btn-dark">Transfer money</button></Link></td>
+      <td className=' justify-content-center'><Link to={`/customers/transfer/${customer.id}`}><button  className="btn btn-dark">Transfer money</button></Link></td>
     </tr>
 
         ))

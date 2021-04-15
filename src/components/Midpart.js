@@ -31,7 +31,7 @@ function Midpart() {
               </td>
               <td>
              
-             <Link to={'/transactionhistory'}> <button class="btn btn-dark">Transaction History</button></Link>
+             <Link to={'/transactionhistory'}> <button class="btn btn-dark">View History</button></Link>
     
               
               </td>

@@ -22,9 +22,9 @@ function TransactionHistory() {
       <tbody>
       
             {
-               customers.map((transaction) => (
+               customers.map((transaction,index) => (
                 <tr>
-                <th scope="row">{transaction.id}</th>
+                <th scope="row" key={transaction.id}>{index+1}</th>
                   <td>{transaction.sender}</td>
                   <td>{transaction.receiver}</td>
                   <td>{transaction.amount}</td>

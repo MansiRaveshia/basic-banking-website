@@ -6,10 +6,9 @@ import { faFacebookSquare ,faTwitterSquare,faInstagramSquare} from '@fortawesome
 
 function Footer() {
     return (
-        <div className="f">
+        <div className="f" id='footersect'>
              <h3 className="h">Address</h3>
              <h5>3rd floor,Shivaay Apartments,New Ring Road,Ahemadabad</h5>
-             <br/>
              <br/>
              
              <h3 className="h">Contact Details</h3>
@@ -24,6 +23,8 @@ function Footer() {
         <FontAwesomeIcon className="ic" icon={faInstagramSquare}/>
         
         </p>
+        <br/>
+        <p style={{color:"black"}}>© Copyright 2021-Mansi</p>
             
         </div>
     )

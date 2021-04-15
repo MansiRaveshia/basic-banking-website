@@ -79,9 +79,9 @@ const initialState ={
         
         {
           "id":1,
-          "sender" : "manali",
-          "receiver" : "mansi",
-          "amount": 67,
+          "sender" : "Leanne Graham",
+          "receiver" : "Patricia Lebsack",
+          "amount": 500,
           "date": "4/11/2021, 10:11:13 PM",
         }
     

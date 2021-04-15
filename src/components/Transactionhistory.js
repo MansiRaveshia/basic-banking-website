@@ -6,10 +6,11 @@ function TransactionHistory() {
     const customers = useSelector(state => state.customer.history);
   
     return (
-        <div className="container">
+      <div style={{backgroundColor:"rgb(247, 230, 230)"}}>
+        <div className="container" >
          <div className="py-4">
     
-    <table className="table border shadow">
+    <table className="table table-sm border shadow" style={{backgroundColor:"white"}}>
       <thead className="thead-dark">
         <tr>
         <th scope="col"> Transaction Id</th>
@@ -37,6 +38,7 @@ function TransactionHistory() {
       </tbody> 
 
     </table>
+  </div>
   </div>
             
         </div>

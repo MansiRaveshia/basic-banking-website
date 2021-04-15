@@ -79,24 +79,24 @@ import './Transfer.css'
     
 
     return (
-      <div className="trans">
+      <div className="trans" style={{backgroundColor:"rgb(247, 230, 230)"}}>
       <div className ='container'>
         <div className='py-15'>
     <div className="card border-0 shadow">
     <div className="card-body">
     <form>
     <div class="form-group">
-    <label for="exampleFormControlSelect1">Sender:</label>
-    <h5>{mysender.name}</h5>
+    <label className='h' for="exampleFormControlSelect1"><h4>Sender:</h4></label>
+    <p style={{fontSize: "20px"}}>{mysender.name}</p>
     </div>
 
     <div class="form-group">
-    <label for="exampleFormControlSelect1">Sender's Current Balance:</label>
-    <h5>{mysender.balance}</h5>
+    <label className='h' for="exampleFormControlSelect1"><h4>Sender's Current Balance:</h4></label>
+    <p style={{fontSize: "20px"}}>{mysender.balance}</p>
     </div>
   
   <div class="form-group">
-    <label for="exampleFormControlSelect1">Receiver:</label>
+    <label className='h' for="exampleFormControlSelect1"><h4>Receiver:</h4></label>
     <select class="form-control" id="exampleFormControlSelect1" onChange={(e) => setreceiverid(e.target.value)}>
     <option value="" disabled selected hidden>-Please Select receiver-</option>
     { receiverlist.map((rec) => ( 
@@ -107,13 +107,13 @@ import './Transfer.css'
   </div>
   
  <div class="form-group">
-    <label for="exampleFormControlInput1">Transfer Amount:</label>
+    <label className='h' for="exampleFormControlInput1"><h4>Transfer Amount:</h4></label>
     <input type="text" class="form-control" id="exampleFormControlInput1" 
     placeholder="0" value={amount} onChange={(e) => setamount(e.target.value)}/>
   </div>
 
   <div class="form-group row">
-    <div class="col-sm-10">
+    <div className="col-sm-10 " >
       <button  type="submit" class="btn btn-dark"  onClick={e=> handleSubmit(e)}>Transfer</button>
     </div>
   </div>

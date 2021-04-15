@@ -2,17 +2,17 @@ import React, { useEffect, useState } from 'react';
 
 import {Link} from "react-router-dom";
 import {useSelector} from "react-redux";
-import './Customers.css'
+
 
 const Customers = () =>{
   const customers = useSelector((state) => state.customer.customers );
 
 
     return (
-        
-         <div className="container ">
+        <div style={{backgroundColor:"rgb(247, 230, 230)"}}>
+         <div className="container " >
          <div className="py-2">
-<table class="mtab table border shadow" >
+<table class="mtab table table-sm border shadow" style={{backgroundColor:"white"}}>
   <thead class="thead-dark">
     <tr>
       <th scope="col">#</th>
@@ -39,8 +39,8 @@ const Customers = () =>{
       }
   
   </tbody>
-  
 </table>
+</div>
 </div>
 </div>
            

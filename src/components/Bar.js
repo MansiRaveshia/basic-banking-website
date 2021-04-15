@@ -1,6 +1,7 @@
 
 import React, { Component } from 'react'; 
-import { Navbar, Nav, NavItem, NavDropdown, MenuItem } from 'react-bootstrap';
+import { Navbar, Nav } from 'react-bootstrap';
+import {HashLink as Link} from 'react-router-hash-link';
 
 
 function Bar() {
@@ -15,10 +16,10 @@ function Bar() {
           <a className="nav-link" href="#">Home </a>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="#aboutus">About Us</a>
+          <Link to='/#footersect' className="nav-link" href="#aboutus">Address</Link>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="#bmid">Contact</a>
+        <Link to='/#footersect' className="nav-link" href="#bmid">Contact</Link>
         </li> 
     </Nav>
 </Navbar.Collapse>

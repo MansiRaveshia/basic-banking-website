@@ -33,7 +33,7 @@ const Customers = () =>{
       <td>{customer.name}</td>
       <td>{customer.email}</td>
       <td>{customer.balance}</td>
-      <td className=' p-1'><Link to={`/customers/transfer/${customer.id}`}><button  className="btn btn-dark">Transfer money</button></Link></td>
+      <td className=' p-2'><Link to={`/customers/transfer/${customer.id}`}><button  className="btn btn-dark">View</button></Link></td>
     </tr>
 
         ))

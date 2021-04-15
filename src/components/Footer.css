@@ -1,0 +1,16 @@
+.f{
+    background-color: rgb(89, 99, 138);
+    text-align: center;
+    width: 100%;
+    padding:5%;
+    color:rgb(197, 194, 194);
+}
+
+.ic{
+    margin: 1%;
+    color:rgb(197, 194, 194); 
+}
+.h{
+    color:black;
+    font-style: italic;
+}

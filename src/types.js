@@ -1,0 +1,2 @@
+export const UPDATE_COSTUMER = 'UPDATE_COSTUMER';
+export const HISTORY_ADD='HISTORY_ADD';

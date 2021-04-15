@@ -41,11 +41,11 @@ import './Transfer.css'
       }
       else if(Number(amount)<0)
       {
-          alert("Oops!Negative value cannot be transfered");
+          alert("Oops! Negative value cannot be transfered");
       }
       else if(Number(mysender?.balance) < Number(amount))
       {
-          alert("Oops!current balance is very low")
+          alert("Oops! You have insufficient balance");
       }
       else{
       const receiver = {
@@ -81,7 +81,7 @@ import './Transfer.css'
     return (
       <div className="trans" style={{backgroundColor:"rgb(247, 230, 230)"}}>
       <div className ='container'>
-        <div className='py-15'>
+        <div className='p-15'>
     <div className="card border-0 shadow">
     <div className="card-body">
     <form>

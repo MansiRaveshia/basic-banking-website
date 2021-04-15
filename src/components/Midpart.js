@@ -10,7 +10,7 @@ function Midpart() {
           <tr>
               <td>
               <div className="imm">
-              <img  className="enter" src="https://www.kindpng.com/picc/m/339-3392096_ca-users-clipart-hd-png-download.png" />
+              <img  className="enter" src="https://cdn2.iconfinder.com/data/icons/user-23/512/User_Customers.png" />
               
     
               </div>

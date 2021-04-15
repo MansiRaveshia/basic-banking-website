@@ -1,17 +1,16 @@
 import React from 'react';
 import { useSelector} from "react-redux";
-import './Trans.css'
+
 
 function TransactionHistory() {
 
     const customers = useSelector(state => state.customer.history);
   
     return (
-      <div  style={{backgroundColor:"rgb(247, 230, 230)"}} >
         <div className="container" >
          <div className="p-4">
     
-    <table className="mtab table border shadow" style={{backgroundColor:"white"}} >
+    <table className="table-sm table border shadow">
       <thead className="thead-dark">
         <tr>
         <th scope="col"> Transaction Id</th>
@@ -41,7 +40,7 @@ function TransactionHistory() {
     </table>
   </div>
   </div>
-  </div>
+  
       
     )
 }

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 
 import {Link} from "react-router-dom";
 import {useSelector} from "react-redux";
-import './Trans.css';
+
 
 
 const Customers = () =>{
@@ -10,10 +10,10 @@ const Customers = () =>{
 
 
     return (
-        <div style={{backgroundColor:"rgb(247, 230, 230)"}}>
+        
          <div className="container " >
          <div className="p-3">
-<table class="mtab table border shadow" style={{backgroundColor:"white"}}>
+<table class="table-sm table border shadow" >
   <thead class="thead-dark">
     <tr>
       <th scope="col">#</th>
@@ -33,7 +33,7 @@ const Customers = () =>{
       <td>{customer.name}</td>
       <td>{customer.email}</td>
       <td>{customer.balance}</td>
-      <td className=' p-2'><Link to={`/customers/transfer/${customer.id}`}><button  className="btn btn-dark">View</button></Link></td>
+      <td className=' p-2'><Link to={`/customers/transfer/${customer.id}`}><button  className="btn btn-dark">Transfer money</button></Link></td>
     </tr>
 
         ))
@@ -43,7 +43,7 @@ const Customers = () =>{
 </table>
 </div>
 </div>
-</div>
+
     );
 };
 
